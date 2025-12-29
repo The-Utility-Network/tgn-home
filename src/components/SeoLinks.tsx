@@ -98,7 +98,7 @@ export default function SeoLinks() {
                                         href={`/locations/${loc.slug}`}
                                         className="px-3 py-1 rounded-full bg-white/5 hover:bg-utility-red/20 hover:text-utility-red text-xs transition-colors border border-white/5 hover:border-utility-red/30"
                                     >
-                                        {loc.city}
+                                        {loc.name}
                                     </Link>
                                 ))}
                             </div>
