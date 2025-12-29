@@ -6,10 +6,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
-  // Disable instrumentation to prevent loading parent project's prisma
-  experimental: {
-    instrumentationHook: false,
-  },
+
   images: {
     remotePatterns: [
       {
