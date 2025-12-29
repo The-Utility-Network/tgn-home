@@ -12,7 +12,7 @@ interface DynamicIconProps extends LucideProps {
  * Falls back to a circle if icon not found.
  */
 export default function DynamicIcon({ name, ...props }: DynamicIconProps) {
-    const IconComponent = (LucideIcons as Record<string, React.ComponentType<LucideProps>>)[name];
+    const IconComponent = (LucideIcons as unknown as Record<string, React.ComponentType<LucideProps>>)[name];
 
     if (!IconComponent) {
         // Fallback to Circle if icon name not found
