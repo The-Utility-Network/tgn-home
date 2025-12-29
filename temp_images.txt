@@ -1,0 +1,30 @@
+--- u:/TheGrandeNarrative/tuc-template/community-factions.md ---
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb734696-275f-48ab-9bcc-1c6db8c6913c/genrevo_an_extremely_harsh_landscape_with_a_dystopian_futuristi_2cdc36a0-cb46-4e4f-937c-71e48f4a3f81.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b1a3f92-a06d-42d0-b89d-bf417b68da89/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1525b20f-f6e6-44bc-8601-64afac21e7b9/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a0b0a9c-9d09-4a76-98cf-c4337593a56b/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9077d85d-532c-43e4-bc6d-91ef0205b1bc/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4a376da-2f48-45d0-b32b-a6b295130ccd/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6df5ba25-eb6d-43e1-8175-9b4ef1afa781/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68380a54-a456-41b4-9209-4439f20d6107/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f96cc22-3a8d-4ab3-8c67-02dbb3c5fd30/genrevo_ornate_8bc984fc-bfce-4a4a-8531-05fbf15ad422.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f014a4b-4ff4-46cd-bbcb-090dbedbc83d/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f34109f3-0b6e-484d-a4a3-d576eebb1418/Warden1isit.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96c0aa76-05ea-4e20-be89-6d04f78ec28c/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92ccd26f-df0f-431b-8ac3-a5788c212bc0/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6752a423-b4c7-4a34-91bd-34231ac23e65/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0dafb47f-2aed-4c23-905e-cf84de469cd7/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74b0fd16-3754-4518-a5a4-5b2140b55105/Untitled.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/86b4d03a-e381-4820-8433-d942fc58801e/Untitled.png
+--- u:/TheGrandeNarrative/tuc-template/admin-factions.md ---
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c87e9346-9a2d-495a-aad7-d60006a144ae/Untitled_-_2023-01-17_05.42.44_(2)_Page_07.jpg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c178e129-034c-467b-9f39-4c31e8f2880a/Untitled_-_2023-01-17_05.42.44_(2)_Page_06.jpg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8a1a408-aa0e-4d02-823d-87ee85a1afaa/Hand.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c178aa7e-e70f-495d-b2ac-647237a886c8/Introbg3.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cb36c45-0866-4aaf-98a0-fa2004b5d010/TUC-Army-Emblem.jpg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a283232-b892-4273-932c-354f167449d0/Slide_14.jpeg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7fa6de9e-85b5-412f-858f-ff6922b4aac6/CIU_(2).jpg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dedf5e4c-88d0-4d0f-8bdd-19691b16b758/CIU2.jpg
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bec74ea-937a-422a-b8b7-5419d70e19cc/SBadge.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5d886a4-4810-4e18-a4ec-68eccbb9bfa2/The_Sheriff.png
+https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2702bc5b-bd66-4d92-92ce-cf42b9c2eca7/Untitled.png

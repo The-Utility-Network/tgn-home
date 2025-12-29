@@ -1,0 +1,434 @@
+@import "tailwindcss";
+
+/* ========================================
+   The Grande Narrative Design System - CSS Variables
+   ======================================== */
+:root {
+  /* Match main TGN portal color scheme */
+  --accent-teal: #2ec7b5;
+  --accent-teal-rgb: 46, 199, 181;
+  --accent-ember: #f2a65a;
+  --accent-ember-rgb: 242, 166, 90;
+  --accent-gold: #ffe5b4;
+  --accent-gold-rgb: 255, 229, 180;
+  --tgn-primary: #2ec7b5;
+  --tgn-primary-dark: #1e9f91;
+  --tgn-primary-light: #4dd4c4;
+  --tgn-accent: #f2a65a;
+  --tgn-accent-light: #ffb875;
+  --tgn-gold: #ffe5b4;
+  --tgn-copper: #B87333;
+  --tgn-emerald: #22C55E;
+  --background: #010609;
+  --background-secondary: #04111a;
+  --foreground: #f6fcfa;
+  --foreground-muted: rgba(173, 211, 204, 0.68);
+  --glass-bg: rgba(8, 30, 32, 0.72);
+  --glass-border: rgba(46, 199, 181, 0.35);
+  --glow-color: rgba(46, 199, 181, 0.4);
+  --glow-accent: rgba(242, 166, 90, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-tgn-primary: var(--tgn-primary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ========================================
+   iOS Safe Area / Dynamic Island Support
+   ======================================== */
+@supports (padding: env(safe-area-inset-top)) {
+  html {
+    background-color: #000000;
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  body {
+    margin-top: calc(-1 * env(safe-area-inset-top));
+    margin-left: calc(-1 * env(safe-area-inset-left));
+    margin-right: calc(-1 * env(safe-area-inset-right));
+    margin-bottom: calc(-1 * env(safe-area-inset-bottom));
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+body {
+  background: linear-gradient(to bottom, #010609, #04111a);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tgn-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ========================================
+   Glass Panel Effect
+   ======================================== */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(46, 199, 181, 0.3);
+  box-shadow: 0 0 30px var(--glow-color);
+}
+
+/* ========================================
+   TGN Glow Effects
+   ======================================== */
+.glow-primary {
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px var(--glow-accent);
+}
+
+.glow-primary-text {
+  text-shadow: 0 0 10px var(--glow-color);
+}
+
+.border-glow {
+  border-color: rgba(46, 199, 181, 0.3);
+  box-shadow: 0 0 15px var(--glow-color);
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+.font-mono-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-tgn-primary {
+  color: var(--tgn-primary);
+}
+
+.text-tgn-accent {
+  color: var(--tgn-accent);
+}
+
+.text-muted {
+  color: var(--foreground-muted);
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px var(--glow-color);
+  }
+
+  50% {
+    box-shadow: 0 0 40px var(--glow-color);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(139, 0, 0, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Stagger animations */
+.stagger-1 {
+  animation-delay: 0.1s;
+}
+
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+
+.stagger-4 {
+  animation-delay: 0.4s;
+}
+
+.stagger-5 {
+  animation-delay: 0.5s;
+}
+
+.stagger-6 {
+  animation-delay: 0.6s;
+}
+
+/* ========================================
+   HUD Decorative Elements
+   ======================================== */
+.hud-line-left {
+  position: absolute;
+  left: 1.5rem;
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(46, 199, 181, 0.4), transparent);
+}
+
+.hud-line-right {
+  position: absolute;
+  right: 1.5rem;
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to left, rgba(46, 199, 181, 0.4), transparent);
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+.section-heading {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tgn-primary);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ffffff, #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* ========================================
+   Card Styles
+   ======================================== */
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(46, 199, 181, 0.3);
+  box-shadow: 0 0 30px var(--glow-color);
+  transform: translateY(-4px);
+}
+
+/* Faction card variant */
+.card-faction {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-faction:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  background: var(--tgn-primary);
+  color: white;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--tgn-primary-dark);
+  box-shadow: 0 0 30px var(--glow-color);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--tgn-primary);
+  color: var(--tgn-primary);
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  background: var(--tgn-accent);
+  color: white;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background: var(--tgn-accent-light);
+  box-shadow: 0 0 30px var(--glow-accent);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   Wave-Conway Canvas Background
+   ======================================== */
+.wave-conway-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* No scrollbar helper */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ========================================
+   Faction Colors
+   ======================================== */
+.faction-army {
+  --faction-color: #DC2626;
+}
+
+.faction-ciu {
+  --faction-color: #6B21A8;
+}
+
+.faction-sheriff {
+  --faction-color: #D4AF37;
+}
+
+.faction-copper {
+  --faction-color: #B87333;
+}
+
+.faction-pot {
+  --faction-color: #22C55E;
+}
+
+.faction-bootleggers {
+  --faction-color: #F97316;
+}
