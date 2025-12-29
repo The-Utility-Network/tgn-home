@@ -24,9 +24,9 @@ const communityLinks = [
 
 export default function Footer() {
     return (
-        <footer className="relative py-16 px-6 border-t border-white/10">
+        <footer className="relative py-12 md:py-16 px-4 md:px-6 border-t border-white/10">
             <div className="max-w-7xl mx-auto">
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-16">
                     {/* Brand Column */}
                     <div>
                         <div className="flex items-center gap-3 mb-6">

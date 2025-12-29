@@ -20,7 +20,7 @@ export default function Philosophy() {
     ];
 
     return (
-        <section id="lore" className="relative py-24 px-6">
+        <section id="lore" className="relative py-16 md:py-24 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -33,7 +33,7 @@ export default function Philosophy() {
                 </div>
 
                 {/* Quotes Grid */}
-                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
                     {quotes.map((quote, index) => (
                         <div
                             key={quote.author}
@@ -57,7 +57,7 @@ export default function Philosophy() {
                 </div>
 
                 {/* Core Narrative */}
-                <div className="glass-panel p-12 rounded-2xl text-center max-w-4xl mx-auto">
+                <div className="glass-panel p-6 md:p-12 rounded-2xl text-center max-w-4xl mx-auto">
                     <h3 className="text-2xl font-bold text-white mb-6">The Grande Narrative</h3>
 
                     <div className="space-y-4 text-gray-400 leading-relaxed">

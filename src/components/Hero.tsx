@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export default function Hero() {
     return (
-        <section id="hero" className="relative min-h-screen flex items-center justify-center px-6 pt-24">
+        <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24">
             <div className="max-w-5xl mx-auto text-center z-10">
                 {/* TGN Logo */}
-                <div className="flex justify-center mb-12 opacity-0 animate-fadeInUp">
-                    <div className="relative w-[48rem] h-40">
+                <div className="flex justify-center mb-8 md:mb-12 opacity-0 animate-fadeInUp">
+                    <div className="relative w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl h-20 sm:h-24 md:h-32 lg:h-40">
                         <Image
                             src="/tgnlogo.png"
                             alt="The Grande Narrative"

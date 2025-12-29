@@ -41,7 +41,7 @@ const pillars = [
 
 export default function Pillars() {
     return (
-        <section id="pillars" className="relative py-24 px-6">
+        <section id="pillars" className="relative py-16 md:py-24 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <span className="section-heading">THE FOUR PILLARS</span>
@@ -51,7 +51,7 @@ export default function Pillars() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {pillars.map((pillar, index) => (
                         <div
                             key={pillar.title}

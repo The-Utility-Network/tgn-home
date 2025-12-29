@@ -4,7 +4,7 @@ import { CODEX } from '@/data/codex';
 
 export default function SeoLinks() {
     return (
-        <section className="relative py-24 px-6 border-t border-white/10 overflow-hidden">
+        <section className="relative py-16 md:py-24 px-4 md:px-6 border-t border-white/10 overflow-hidden">
             {/* Background Ambience */}
             <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0a] to-black pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-red-900/10 blur-[100px] rounded-full pointer-events-none" />
@@ -19,7 +19,7 @@ export default function SeoLinks() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
                     {/* Codex Column */}
                     <div className="glass-panel p-8 rounded-2xl flex flex-col h-full group hover:bg-white/5 transition-colors duration-500">
                         <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">

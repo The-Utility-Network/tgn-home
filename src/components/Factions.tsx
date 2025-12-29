@@ -64,7 +64,7 @@ export default function Factions() {
     const [activeFaction, setActiveFaction] = useState(0);
 
     return (
-        <section id="factions" className="py-24 px-6">
+        <section id="factions" className="py-16 md:py-24 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -78,7 +78,7 @@ export default function Factions() {
                 </div>
 
                 {/* Faction Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {factions.map((faction, index) => (
                         <button
                             key={faction.name}

@@ -16,7 +16,7 @@ export default function About() {
     ];
 
     return (
-        <section id="world" className="relative py-24 px-6">
+        <section id="world" className="relative py-16 md:py-24 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
                     {/* Left Content */}
@@ -55,7 +55,7 @@ export default function About() {
                         <h4 className="text-xs font-mono tracking-wider text-gray-500 mb-4">
                             GULAG TERRITORIES
                         </h4>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {locations.map((location) => (
                                 <div key={location.name} className="card group">
                                     <h4 className="text-sm font-bold text-[#2ec7b5] mb-2 group-hover:text-white transition-colors">
@@ -71,7 +71,7 @@ export default function About() {
                             <h4 className="text-xs font-mono tracking-wider text-gray-500 mb-4">
                                 SIMULATION METRICS
                             </h4>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[
                                     { label: 'Active Factions', desc: '6 competing powers' },
                                     { label: 'Guild Economy', desc: 'Copper, Crops, Spirits' },
@@ -101,7 +101,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                         {keyFigures.map((figure) => (
                             <div key={figure.name} className="group text-center">
                                 <div
