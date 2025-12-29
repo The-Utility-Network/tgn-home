@@ -84,14 +84,14 @@ export default function Factions() {
                             key={faction.name}
                             onClick={() => setActiveFaction(index)}
                             className={`card-faction text-left p-6 transition-all duration-300 ${activeFaction === index
-                                    ? 'ring-2 scale-[1.02]'
-                                    : 'hover:bg-white/5'
+                                ? 'ring-2 scale-[1.02]'
+                                : 'hover:bg-white/5'
                                 }`}
                             style={{
                                 borderColor: activeFaction === index ? faction.color : 'rgba(255,255,255,0.1)',
                                 boxShadow: activeFaction === index ? `0 0 30px ${faction.color}30` : 'none',
-                                ringColor: faction.color,
-                            }}
+                                '--tw-ring-color': faction.color,
+                            } as React.CSSProperties}
                         >
                             <div className="flex items-start gap-4">
                                 <div
